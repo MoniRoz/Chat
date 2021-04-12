@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "jsx": "preserve",
+    "module": "esnext"
+  },
+  "include": [
+    "next-env.d.ts",
+    "typings/**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+}
