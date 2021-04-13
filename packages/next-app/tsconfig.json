@@ -8,10 +8,13 @@
     "jsx": "preserve",
     "module": "esnext"
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "next-env.d.ts",
     "typings/**/*.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "./**/*.ts",
+    "./**/*.tsx"
   ],
 }
