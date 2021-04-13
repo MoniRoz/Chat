@@ -1,0 +1,10 @@
+{
+  "extends": "../../.eslintrc",
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "off"
+  }
+}
