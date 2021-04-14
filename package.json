@@ -6,7 +6,12 @@
     "typecheck": "lerna exec -- tsc --noEmit",
     "typecheck:changed": "lerna exec --since origin/master --include-dependents -- tsc --noEmit"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "@types/jest": "26.0.22",
+    "@types/node": "14.14.37",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
     "eslint": "7.24.0",
@@ -18,7 +23,12 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-unicorn": "29.0.0",
     "lerna": "4.0.0",
+    "nodemon": "2.0.7",
     "prettier": "2.2.1",
+    "ts-jest": "26.5.4",
+    "ts-loader": "8.1.0",
+    "ts-node": "9.1.1",
+    "tsconfig-paths": "3.9.0",
     "typescript": "4.2.4"
   }
 }

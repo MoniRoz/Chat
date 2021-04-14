@@ -10,7 +10,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "removeComments": true,
     "strict": true,
   }

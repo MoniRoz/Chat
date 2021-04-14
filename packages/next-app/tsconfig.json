@@ -6,7 +6,10 @@
       "es2017"
     ],
     "jsx": "preserve",
-    "module": "esnext"
+    "module": "esnext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"
@@ -16,5 +19,5 @@
     "typings/**/*.d.ts",
     "./**/*.ts",
     "./**/*.tsx"
-  ],
+  ]
 }
