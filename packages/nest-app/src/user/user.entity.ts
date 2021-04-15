@@ -26,6 +26,9 @@ export class User {
     @Index("activity-idx")
     isActive: boolean;
 
+    @Column("date")
+    lastActive: Date;
+
     @ManyToMany(() => Chat, (chat) => chat.id)
     @JoinTable()
     chats: Chat[];

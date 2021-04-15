@@ -1,0 +1,36 @@
+todo:
+
+Backend
+- attach db
+- create websocket server
+- chat between two or more users, users with activity state
+- chat - id, participants id's - each user can have multiple chats - and each chat can have multiple users (group id)
+  - participants - single user, or group 
+
+Chat
+  - id
+  - participants Array[User] >2 -> group chat
+  - messages Array[Message]
+
+Message
+  - id
+  - sender
+  - date
+  - content
+
+User
+   - id
+   - name
+   - surname
+   - isActive
+   - chats Array[Chat]
+
+Frontend
+- user have list of users (id's) on user click -> he opens chat with recievver id - we are searching chat with that id - if we don't have it 
+we create one - returning chatID - each message should be send with chat id
+- user can have groups chats -> rendering groups -> on click he send id of teh group - get's chat prev messages, like above 
+- when users clicks to chat with available users  - or bot one - we start communication 
+  - if with bot - we can open single chat with bot responding to every message with different joke 
+  - if normal message - we will store chat messages in db
+
+  On enter create random user -> store user in local storage
